@@ -1,4 +1,5 @@
 
+
 var q1 = {
     question:'What is the capital of United States of America?',
     option: ['New York', 'San Francisco', 'Washington', 'Atlanta'],
@@ -29,28 +30,30 @@ var q5 = {
     answer: 'Paris',
 };
 
-var questions = [q1, q2, q3, q4, q5]
 
+var questions = [q1, q2, q3, q4, q5];
 //functions
-function nextQuestion () {
-//conditions
-    for (var i=0; i<questions.length; i++) {
-    var options ='';
-
-        for (var j = 0; j < questions[i].option.length; j++) {
-        options += '<li>' + questions[i].option[j] + '</li>';
+function nextQuestion () 
+{
+    debugger;
+    for (var i = 0; i < questions.length; i++) {
+        var options = '';
+    for (var j = 0; j < questions[i].option.length; j++) {
+         options += `<li>${questions[i].option[j]}</li>`;
         }
-    
-        $('#question').html(
-        `<div>
+    $('.questions').html(
+        `<div class="questions">
           <h4>${questions[i].question}</h4>
-          <ul>
-            ${options}
-          </ul>
+          <ul>${options}</ul>
         </div>`
-        );
-    } 
-
+    );
+    }
+    
 };
 
-$('#list').on('click', nextQuestion)
+function init () {
+$("li").on('click', nextQuestion)
+}
+
+init ()
+

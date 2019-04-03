@@ -30,30 +30,44 @@ var q5 = {
     answer: 'Paris',
 };
 
-
+//
 var questions = [q1, q2, q3, q4, q5];
 //functions
-function nextQuestion () 
-{
-    debugger;
+
+    var timer = setInterval(function() {
+  
+      var count = parseInt($('#time').html());
+      if (count !== 0) {
+        $('#time').html(count - 1);
+      } else {
+        clearInterval(timer);
+      }
+    }, 1000);
+
+//init function
+    function init () {
+    $("button").on('click', nextQuestion)
+    }
+    //next question
+function nextQuestion () {
     for (var i = 0; i < questions.length; i++) {
         var options = '';
     for (var j = 0; j < questions[i].option.length; j++) {
          options += `<li>${questions[i].option[j]}</li>`;
-        }
+        }    
     $('.questions').html(
-        `<div class="questions">
+        `<div class="boxflex">
+    <p id="total-score">Time Remaining:<span id="time">${30}</span></p>
+        </div>
+        <div class="questions">
           <h4>${questions[i].question}</h4>
           <ul>${options}</ul>
-        </div>`
-    );
+        </div>`)
     }
-    
 };
-
-function init () {
-$("li").on('click', nextQuestion)
-}
 
 init ()
 
+// start button click to begin
+
+//new screen shows question and timer

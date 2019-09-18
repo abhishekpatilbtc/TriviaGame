@@ -269,10 +269,10 @@ $(document).ready(function () {
             $(".questions").html("");
             $(".questions").append(bootstrapDiv + "<h1 id='timeLeft' style='color: #1d8fa5;'></h1></div></div>");
             $(".questions").append(bootstrapDiv + "<h2 id='question' style='margin-bottom: 20px;'></h2></div></div>");
-            $(".questions").append(bootstrapDiv + "<button type='button' class='btn btn-primary' id='choice1'></button></div></div>");
-            $(".questions").append(bootstrapDiv + "<button type='button' class='btn btn-primary' id='choice2'></button></div></div>");
-            $(".questions").append(bootstrapDiv + "<button type='button' class='btn btn-primary' id='choice3'></button></div></div>");
-            $(".questions").append(bootstrapDiv + "<button type='button' class='btn btn-primary' id='choice4'></button></div></div>");
+            $(".questions").append(bootstrapDiv + "<button type='button' class='btn btn-outline-dark' id='choice1'></button></div></div>");
+            $(".questions").append(bootstrapDiv + "<button type='button' class='btn btn-outline-dark' id='choice2'></button></div></div>");
+            $(".questions").append(bootstrapDiv + "<button type='button' class='btn btn-outline-dark' id='choice3'></button></div></div>");
+            $(".questions").append(bootstrapDiv + "<button type='button' class='btn btn-outline-dark' id='choice4'></button></div></div>");
 
             //Add consts to HTML lines using Id
             $("#timeLeft").text(clock)

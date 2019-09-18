@@ -15,7 +15,6 @@ $(document).ready(function () {
     var bootstrapDiv = "<div class='row text-center justify-content-center'><div class='col col-md-8 justify-content-center'>";
 
 
-
     //Question Array
     function gameStart() {
         correct = 0;
@@ -29,7 +28,7 @@ $(document).ready(function () {
                 option4: 'Atlanta',
                 answer: 'Washington'
             }, {
-                question: 'What is the capital of China?',
+                question: 'What is the capital of Peoples Republic of China?',
                 option1: 'Hong Kong',
                 option2: 'Beijing',
                 option3: 'Chongqing',
@@ -56,7 +55,186 @@ $(document).ready(function () {
                 option3: 'Bordeaux',
                 option4: 'Cannes',
                 answer: 'Paris'
-            }];
+            },{
+                question: 'What is the capital of Italy?',
+                option1: 'Rome',
+                option2: 'Venice',
+                option3: 'Florence',
+                option4: 'Naples',
+                answer: 'Rome'
+            },{
+                question: 'What is the capital of Russia?',
+                option1: 'Saint Petersburg',
+                option2: 'Kazan',
+                option3: 'Moscow',
+                option4: 'Yekaterinburg',
+                answer: 'Moscow'
+            },{
+                question: 'What is the capital of Japan?',
+                option1: 'Osaka',
+                option2: 'Hiroshima',
+                option3: 'Kyoto',
+                option4: 'Tokyo',
+                answer: 'Tokyo'
+            },{
+                question: 'What is the capital of Canada?',
+                option1: 'Montreal',
+                option2: 'Toronto',
+                option3: 'Vancouver',
+                option4: 'Victoria',
+                answer: 'Toronto'
+            },{
+                question: 'What is the capital of Ireland?',
+                option1: 'Dublin',
+                option2: 'Cork',
+                option3: 'Galway',
+                option4: 'Waterford',
+                answer: 'Dublin'
+            },{
+                question: 'What is the capital of South Africa?',
+                option1: 'Durban',
+                option2: 'Johannesburg',
+                option3: 'Cape Town',
+                option4: 'Port Elizabeth',
+                answer: 'Cape Town'
+            },{
+                question: 'What is the capital of Argentina?',
+                option1: 'Mendoza',
+                option2: 'Buenos Aires',
+                option3: 'Córdoba',
+                option4: 'Rosario',
+                answer: 'Buenos Aires'
+            },{
+                question: 'What is the capital of Portugal?',
+                option1: 'Braga',
+                option2: 'Porto',
+                option3: 'Coimbra',
+                option4: 'Rosario',
+                answer: 'Lisbon'
+            },{
+                question: 'What is the capital of Saudia Arabia?',
+                option1: 'Mecca',
+                option2: 'Media',
+                option3: 'Medina',
+                option4: 'Jeddah',
+                answer: 'Riyadh'
+            },{
+                question: 'What is the capital of U.A.E?',
+                option1: 'Abu Dhabi',
+                option2: 'Dubai',
+                option3: 'Ajman',
+                option4: 'Sharjah',
+                answer: 'Abu Dhabi'
+            },
+            {
+                question: 'What is the capital of Norway?',
+                option1: 'Bergen',
+                option2: 'Oslo',
+                option3: 'Trondhiem',
+                option4: 'Stavanger',
+                answer: 'Oslo'
+            },
+            {
+                question: 'What is the capital of Spain?',
+                option1: 'Seville',
+                option2: 'Barcelona',
+                option3: 'Madrid',
+                option4: 'Toledo',
+                answer: 'Madrid'
+            },
+            {
+                question: 'What is the capital of Belgium?',
+                option1: 'Bruges',
+                option2: 'Brussels',
+                option3: 'Charleroi',
+                option4: 'Châtelet',
+                answer: 'Brussels'
+            },{
+                question: 'What is the capital of New Zealand?',
+                option1: 'Auckland',
+                option2: 'Wellington',
+                option3: 'Christchurch',
+                option4: 'Napier',
+                answer: 'Wellington'
+            },{
+                question: 'What is the capital of Finland?',
+                option1: 'Oulu',
+                option2: 'Tampere',
+                option3: 'Turku',
+                option4: 'Helsinki',
+                answer: 'Helsinki'
+            },{
+                question: 'What is the capital of Netherlands?',
+                option1: 'Utrecht',
+                option2: 'Rotterdam',
+                option3: 'Groningen',
+                option4: 'Amsterdam',
+                answer: 'Amsterdam'
+            },{
+                question: 'What is the capital of Germany?',
+                option1: 'Berlin',
+                option2: 'Munich',
+                option3: 'Groningen',
+                option4: 'Frankfurt',
+                answer: 'Berlin'
+            },{
+                question: 'What is the capital of Sweden?',
+                option1: 'Malmö',
+                option2: 'Munich',
+                option3: 'Stockholm',
+                option4: 'Gothenburg',
+                answer: 'Stockholm'
+            },{
+                question: 'What is the capital of Republic of China?',
+                option1: 'Beijing',
+                option2: 'Kaohsiung',
+                option3: 'Taipei',
+                option4: 'Hsinchu',
+                answer: 'Taipei'
+            },{
+                question: 'What is the capital of Georgia?',
+                option1: 'Gori',
+                option2: 'Tbilisi',
+                option3: 'Kutaisi',
+                option4: 'Batumi',
+                answer: 'Tbilisi'
+            },{
+                question: 'What is the capital of Mongolia?',
+                option1: 'Erdenet',
+                option2: 'Darkhan',
+                option3: 'Ulaanbaatar',
+                option4: 'Ulaangom',
+                answer: 'Ulaanbaatar'
+            },{
+                question: 'What is the capital of Egypt?',
+                option1: 'Alexandria',
+                option2: 'Giza',
+                option3: 'Memphis',
+                option4: 'Cairo',
+                answer: 'Cairo'
+            },{
+                question: 'What is the capital of Philippines?',
+                option1: 'Pasay',
+                option2: 'San Juan',
+                option3: 'Manila',
+                option4: 'Cebu City',
+                answer: 'Manila'
+            },{
+                question: 'What is the capital of Vietnam?',
+                option1: 'Ho Chi Minh',
+                option2: 'Hanoi',
+                option3: 'Hai Phong',
+                option4: 'Bien Hoa',
+                answer: 'Hanoi'
+            },{
+                question: 'What is the capital of Colombia?',
+                option1: 'Cartagena',
+                option2: 'Medellin',
+                option3: 'Cali',
+                option4: 'Bogotá',
+                answer: 'Bogotá'
+            },
+        ];
     }
 
 
@@ -71,7 +249,7 @@ $(document).ready(function () {
 
             clearInterval(timeRemaining);
             //Declare variables
-            var time = 30;
+            time = 30;
             selector = Math.floor(questions.length * Math.random());
             questionNow = questions[selector].question;
             option1 = questions[selector].option1;
@@ -90,7 +268,7 @@ $(document).ready(function () {
             $(".questions").append(bootstrapDiv + "<button type='button' class='btn btn-primary' id='option4'></button></div></div>");
 
             //Add vars to HTML lines using Id
-            $("#timeremaining").text(time)
+            $("#timeRemaining").text(time)
             $("#question").text(questionNow);
             $("#option1").text(option1);
             $("#option2").text(option2);
@@ -99,21 +277,21 @@ $(document).ready(function () {
 
             //Event Handler
             $("#option1").click(function () {
-                clearInterval(timeRemaining); 
+                clearInterval(timeRemaining);
                 setTimeout(checkAnswer(option1), 200)
             });
 
             $("#option2").click(function () {
-                clearInterval(timeRemaining); 
+                clearInterval(timeRemaining);
                 setTimeout(checkAnswer(option2), 200)
             });
 
             $("#option3").click(function () {
-                clearInterval(timeRemaining); 
+                clearInterval(timeRemaining);
                 setTimeout(checkAnswer(option3), 200)
             });
             $("#option4").click(function () {
-                clearInterval(timeRemaining); 
+                clearInterval(timeRemaining);
                 setTimeout(checkAnswer(option4, 200))
             });
             clockrunning = true;
@@ -150,7 +328,7 @@ $(document).ready(function () {
     }
 
     function startRound() {
-  
+
         if (clockrunning === true) {
             time--;
             $("#timeRemaining").text(time);
@@ -194,11 +372,11 @@ $(document).ready(function () {
 
     //init function
 
-        $("#start").on('click', function () {
-            gameStart();
-            nextQuestion();
-        })
-    
-   
+    $("#start").on('click', function () {
+        gameStart();
+        nextQuestion();
+    })
+
+
 
 });

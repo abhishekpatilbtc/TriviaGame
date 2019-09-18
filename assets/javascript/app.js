@@ -323,9 +323,9 @@ $(document).ready(function () {
         // ===== wronganswer =====
         else if (selection !== answer) {
             wrong++;
-            // If clock runs out, clear the questions to show the rightanswer
+            // If clock runs out, clear the questions to show the right answer
             $(".questions").html("");
-            // show that the user got the the wronganswer and show them the right one.
+            // show that the user got the the wrong answer and show them the right one.
             $(".questions").html(bootstrapDiv + "<h3 style='color: #b70000;'>Oops! That's incorrect!</h3><h3>The correct answer was:</h3>" + "<h3 style='color: #1d8fa5;'>" + answer + "</h3>" + "</div></div>");
             // remove the current question from questions
             questions.splice(selector, 1);
@@ -342,11 +342,11 @@ $(document).ready(function () {
 
             // clock Runs out Scenario
             if (clock === 0) {
-                wrong++; // Player did notanswer question fast enough; increase their wrong score.
+                wrong++; // Player did not answer question fast enough; increase their wrong score.
                 clockrunning = false; // turn the clockr off.
                 $(".questions").html("");
-                // show that the user got the the wronganswer and show them the right one.
-                $(".questions").html(bootstrapDiv + "<h3 style='color: #b70000;'>clock's up!</h3><h3>The right answer was:" + "<h3 style='color: #1d8fa5;'>" + answer + "</h3></div></div>");
+                // show that the user got the the wrong answer and show them the right one.
+                $(".questions").html(bootstrapDiv + "<h3 style='color: #b70000;'>Time's up!</h3><h3>The right answer was:" + "<h3 style='color: #1d8fa5;'>" + answer + "</h3></div></div>");
                 // remove the current question from questions
                 questions.splice(selector, 1);
                 // wait a few seconds before showing the next question.
@@ -357,22 +357,22 @@ $(document).ready(function () {
 
     function triviaEnd() {
         clearInterval(timeLeft);
-        // calculate percentage right
+        // calculate percentage 
         accurate = Math.round((right / (right + wrong)) * 100);
-        // clear questions before re-establishing format.
+        // clear questions before re-establishing format
         $(".questions").html("");
-        // Rebuid the questions with each new question because we clear it to show if the user was right or wrong after each guess.
-        $(".questions").append(bootstrapDiv + "<h2>The trivia has ended!</h2></div></div>");
+        // Rebuid the questions with each new question because we clear it to show if the user was right or wrong after each guess
+        $(".questions").append(bootstrapDiv + "<h2>The trivia has ended</h2></div></div>");
         $(".questions").append(bootstrapDiv + "<h3 style='color: #1d8fa5;'>Let's see how you did.</h3></div></div>");
-        $(".questions").append(bootstrapDiv + "<h4>Right Answer: " + right + "</h4></div></div>");
-        $(".questions").append(bootstrapDiv + "<h4>Wrong Answer: " + wrong + "</h4></div></div>");
+        $(".questions").append(bootstrapDiv + "<h4>Right Answers: " + right + "</h4></div></div>");
+        $(".questions").append(bootstrapDiv + "<h4>Wrong Answers: " + wrong + "</h4></div></div>");
         $(".questions").append(bootstrapDiv + "<h3 style='color: #1a8200;'>" + accurate + "%</h3></div></div>");
-        $(".questions").append(bootstrapDiv + "<button type='button' id='begin' class='btn btn-success'>begin trivia Over</button></div></div>");
+        $(".questions").append(bootstrapDiv + "<button type='button' id='start' class='btn btn-success'>Play Trivia Again!</button></div></div>");
         // Allow user to begin trivia over by clicking the begin button
-        $("#begin").click(function () {
+        $("#start").click(function () {
             triviabegin();
             $(".questions").html(""); // Clear the trivia over screen
-            $("#begin").hide(); // After the button is hit, hide the button 
+            $("#start").hide(); // After the button is hit, hide the button 
             nextquestion();
         })
     }

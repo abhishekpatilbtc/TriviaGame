@@ -10,8 +10,8 @@ body {
     font-style: normal;
     font-weight: 400;
     /* max-width: 960px; */
-    margin: auto;
-    background-repeat: no-repeat;
+
+    /* background-repeat: no-repeat; */
     background-position: center;
     background-position-y: 0%;
    
